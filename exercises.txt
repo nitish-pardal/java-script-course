@@ -1,0 +1,7 @@
+Number         exercise
+1               basic intro for java script
+2               numbers and math
+3               Strings
+4               basic html and css rewind
+5               Variables 
+6               exercises on the ternary operators and guard and default operator.
