@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Cart-quantity</title>
+       <style>
+        div{
+          margin-bottom: 20px;
+        }
+        </style>
+        <body>
+          <div>Cart Quantity</div>
+
+          <button onclick="
+           console.log(`Cart quantity : ${cartQuantity} `);
+              ">ShowQuantity
+          </button>
+            
+          <button onclick="
+            if(cartQuantity+1 > 10) 
+             {alert('The cart if full');}
+            else{console.log(`Cart quantity : ${updateCartQuantity(1)}`);}
+            
+          ">Add to Cart</button>
+
+          <button onclick="
+          if(cartQuantity+2 > 10) 
+             {alert('The cart if full');}
+             else
+              console.log(`Cart quantity : ${cartQuantity += 2}`);
+          ">+2</button>
+
+          <button onclick="
+            if(cartQuantity+3 > 10) 
+               {alert('The cart if full');}
+            else
+              {console.log(`Cart quantity : ${cartQuantity += 3}`);}
+          ">+3</button>
+          
+          <button onclick="
+            if(cartQuantity+4 > 10) 
+             {alert('The cart if full');}
+            else {console.log(`cart quantity: ${cartQuantity +=4}`);  }
+            ">
+          +4</button>
+
+          <button onclick=" 
+           if(cartQuantity+5 > 10) 
+             {alert('The cart if full');}
+           else {console.log( `cart quantity: ${cartQuantity += 5}`);}
+            ">
+          +5</button>
+
+          <!--remove from cart buttons-->
+
+          <button onclick="
+            if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else{ console.log(`cart quantity: ${--cartQuantity}`);}
+           ">remove from cart</button>
+
+
+          <button onclick="
+           if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else{console.log(`Cart quantity : ${cartQuantity -= 2}`);}
+          ">-2</button>
+
+          <button onclick=" 
+            if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else {console.log(`Cart quantity : ${cartQuantity -= 3}`);}
+          ">-3</button>
+
+
+          <button onclick="
+            console.log(`Cart was reset.`);
+            console.log(`Cart quantity : ${cartQuantity = 0}`);
+          "
+          >Reset Cart</button>
+          
+          <script>
+            let cartQuantity = 0;
+          
+            function updateCartQuantity(Quantity)
+            {
+              cartQuantity =cartQuantity+Quantity;
+            }
+          // Types of naming conventions
+          // camel Case: cartQuantity
+          // pascal case: CartQuantity
+          // kebab case: cart-quantity -- this does not work in   java-script
+          // snake case: cart_quantity -- not used much in java script
+       
+            
+          </script>
+    </body>
+</html>

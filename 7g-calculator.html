@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator-simulator</title>
+
+  </head>
+  <body>
+    <p>
+      <button onclick="
+        updateCalulation('1');
+        ">1</button>
+
+      <button onclick="
+        updateCalulation('2');"
+      >2</button>
+      <button onclick="
+         updateCalulation('3');"
+      >3</button>
+    </p>
+      
+    <p>
+      <button onclick="
+        updateCalulation('4');"
+      >4</button>
+      <button onclick="
+        updateCalulation('5');"
+      >5</button>
+      <button onclick="
+        updateCalulation('6');"
+      >6</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalulation('7');"
+      >7</button>
+      <button onclick="
+        updateCalulation('8');;"
+      >8</button>
+      <button onclick="
+       updateCalulation('9');"
+      >9</button>
+    </p>
+
+    <button onclick="
+      updateCalulation('+');"
+    >+</button>
+    <button onclick="
+      console.log(eval(calculation));"
+    >=</button>
+    <button onclick="
+      calculation ='';
+      console.log('clear');
+    ">clear</button>
+    <script>
+      let calculation='';
+      function updateCalulation(number){
+        return( calculation += number);
+      }
+    </script>
+  </body>
+</html>
