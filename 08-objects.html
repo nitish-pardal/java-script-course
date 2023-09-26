@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>objects</title>
+  </head>
+  <body>
+    <script>
+     
+     /*const product={  // object
+        name: 'socks', //object property1
+        price: 1090    // object property2
+      };
+      console.log(product);       // printing whole object
+      console.log(product.name);   //printing one property of object
+      console.log(product.price);  // printing another property of object.
+
+      product.name='Cotton socks';  // changing a particular property
+      console.log(product);   
+
+      product.size ='xl';    // adding a new property to an object
+      console.log(product); 
+
+      delete product.name;   // deleting a property of an object
+      console.log(product);
+
+      product.name='cotton socks';
+      console.log(product);
+
+      console.log(typeof product);*/
+
+      const product2= {
+        name: 'shirt',
+        ['delivery-time']: '1 day' //bracket decleration
+       };
+      console.log(product2);
+      console.log(product2.name);// dot notation
+      console.log(product2['name']);// bracket notation.
+      console.log(product2['delivery-time']); // normal dot notation sees the '-' in the delivery-time as a minus thus we will not be able to acces this with the dot notation.
+
+
+
+      /*object : groups mulitple values togethor.
+        objects are used because they make our code easy to read and more cleaner. B
+
+        BRACKET NOTATION VS THE DOT NOTATION:
+        they are used in the place where we cannot use the normal dot notation to access properties.
+       
+        ** by default we always use the dot notation but in some conditions where it is necessary we need to use the bracket notation.
+
+      */
+    </script>
+  </body>
+</html>
