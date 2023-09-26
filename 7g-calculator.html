@@ -7,43 +7,43 @@
   <body>
     <p>
       <button onclick="
-        updateCalulation('1');
+       updateCalculation('1');
         ">1</button>
 
       <button onclick="
-        updateCalulation('2');"
+        updateCalculation('2');"
       >2</button>
       <button onclick="
-         updateCalulation('3');"
+         updateCalculation('3');"
       >3</button>
     </p>
       
     <p>
       <button onclick="
-        updateCalulation('4');"
+        console.log(updateCalculation('4'));"
       >4</button>
       <button onclick="
-        updateCalulation('5');"
+        console.log(updateCalculation('5'));"
       >5</button>
       <button onclick="
-        updateCalulation('6');"
+        console.log(updateCalculation('6'));"
       >6</button>
     </p>
 
     <p>
       <button onclick="
-        updateCalulation('7');"
+        console.log(updateCalculation('7'));"
       >7</button>
       <button onclick="
-        updateCalulation('8');;"
+        console.log(updateCalculation('8'));;"
       >8</button>
       <button onclick="
-       updateCalulation('9');"
+       console.log(updateCalculation('9'));"
       >9</button>
     </p>
 
     <button onclick="
-      updateCalulation('+');"
+      console.log(updateCalculation('+'));"
     >+</button>
     <button onclick="
       console.log(eval(calculation));"
@@ -54,8 +54,8 @@
     ">clear</button>
     <script>
       let calculation='';
-      function updateCalulation(number){
-        return( calculation += number);
+      function updateCalculation(number){ 
+        console.log( calculation += number);
       }
     </script>
   </body>
