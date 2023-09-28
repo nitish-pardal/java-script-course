@@ -1,0 +1,94 @@
+objects and JSON
+  object : groups mulitple values togethor.
+        objects are used because they make our code easy to read and more cleaner. B
+
+        BRACKET NOTATION VS THE DOT NOTATION:
+        they are used in the place where we cannot use the normal dot notation to access properties.
+       
+        dot notation vs bracket notation: by default we always use the dot notation but in some conditions where it is necessary we need to use the bracket notation.
+            eg: const product={
+                  [delivery-time]:'monday
+            };
+            console.log(`delievry time: ${prodcut['delivery-time']}`);
+     
+     More details about the objects:
+      null vs undefinded:
+      1. we can give a default value to a funciton , but when we want something to be intentionally empty the we use the null , when we use undefined then the function will take the default value that we have definded but when we use null it means that we want the function value to be empty.. 
+      2. they both work the same way in most of the cases   
+      3. when we create an object the property that we create actually gets stored somewhere in the computer memory and the name of the object only points to the refrence of where the property is stored.
+      3. we are able to alter the values of the properties in a const inpite of the 
+      4. objetcs can also be declared as nested objects:
+            eg: const object1={
+                  name:'property1',
+                  [display-name]: 'medicine',
+                  rating:{
+                        stars:4.5,
+                        comments:'good prodcut'
+                  }  
+            };
+
+            to access the above written property we write the dot notation as:
+                  console.log(object1.rating.stars.); or we can use
+                  console.log(object1['ratign']['starts']);
+      5. objects point to a refrence of where the actual property is store in the system.
+      6. we cannot compare two objects with each other directly,
+            if you want to compare the values of two objects then do that manually by compariring the properties of the objects.
+      7. when you compare two objects which may have the same value inside them it will return false and ,
+      8. if 2 objects are pointing to the same refrence then they will return a true when you compare them.
+
+ built in Methods:
+        
+    1. console.log( ) is also a method .
+        
+       2. when we create a function inside an object then it is called a method.
+
+JSON:
+        
+        1. json is same as java script but with a bit less functionality
+        2. but a json is used because it is understandable by almost all the languages .
+        3. inside json the values that are passed should always be passed in double quotes
+        4. json does not support functions.
+
+BUILT-IN JSON object :
+
+      1. JSON.stringify(): 'stringify' is a function which is present inside the JSON which helps to convert any object of java script to JSON string that we provide to a json object.
+       
+      2. JSON does not support functions inside the object, os if there is a fucntion inside our object then it will not convert that function to a JSON.
+
+      3. JSON.parse(): this is json function that helps us to convert any json string back to the java script code.
+
+LOCAL STORAGE: (localStorage):This is also a predefined object
+      note:  a local storage only supports strings .
+      1. a local storage is a place where we store data more permanently
+      2. the stored data is accessible at all the pages,
+      3. when we store data in variables then they get deleted when we refresh/close the page.
+      4. to add a value to a local storage we need to use localStorage.setItem() function.
+      5. to get a value out from a local stirage we need to use localStorage.getItem() fucntion.
+      6. to remove a value from the local storage we need to use the function localStorage.removeItem()
+      7. example to store a JSON value in localStorage:
+                  localStorage.setItem('storage',JSON.stringify(storage));
+      8. example to get a json value from the localStorage: 
+                  JSON.parse(localStorage.getItem('storage'));
+
+AUTO_BOXING:
+      1. when we use a function or a property on a string then AUTO_BOXING is applied on the strign by java-script.
+      example: 'hello'.toUpperCase(); -- this boxes hello in an autobox which we cannot see.
+      2. it also works with numbers and booleans but it does not work with the null values.
+DESTRUCTURING  : this is a easier way to take properties oout of an object andstore it in some variable.
+      example: 
+      const object4={
+            message:'good job',
+            price:799
+      };
+       const{message ,price }= object4; 
+       this is same as writing :
+       message=object4.message;
+       price=object4.price;
+
+
+
+
+
+
+
+
