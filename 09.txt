@@ -1,0 +1,34 @@
+DOCUMENT OBJECT MODEL:
+  1. this is another built in object called as document object.
+  2. Document object represents the web page / models the webpage,
+    when we change the property of the document object then we also change the webpage
+  3.DOM combines javascript and html togethor. 
+  4. we can use document.body to access the body emelent inside the javascript.
+  5.when inside javascript the body element becomes an aboject of javascript
+  6.innerHTML is a property of body as now body has become an object so we can use properties on it .
+  7.The innerHTML property controls the html inside the body.
+  8.methods of the document object:
+    document.querySelector();:  this helps in selecting a particular element of html and put it inside the javascript.
+  9.Every html element has a property called as innerHTML which lets us control the html inside the element.
+  
+  DOCUMENT.querySelector():
+    EXAMPLE:
+    <!DOCTYPE html>
+    <html>
+     <head>
+     <title></title>
+     </head>
+     <body>
+      <button class="js-button1">button1</button>
+      <script>
+        document.querySelector('.js-button1') // this will select the button with the class selector.
+      </script>
+     </body>
+    </html>
+    10. since html element in javascript is an object and the object is a variable so we can assign the html element in a variable.
+    EXAMPLE: 
+      const buttonElement = document.querySelector('.js-button1');
+      the variable buttonElement will now contain the html for the 
+      .js-button.
+
+   
