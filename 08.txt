@@ -85,8 +85,28 @@ DESTRUCTURING  : this is a easier way to take properties oout of an object andst
        message=object4.message;
        price=object4.price;
 
+SHORT HAND PROPERTY:
+      when the property name and the assigment variables are same as:
+      object={
+            message:message
+      };
+      THEN WE CAN WRITE IT AS :
+      object={
+            message
+      }
 
+SHORT HAND METHOD:
+      instead of creating a method in an object like : this only works inside an object an not on standalone functions.
 
+      method: function function1(){
+            console.log('method')
+      };
+      YOU CAN CREATE A METHOD AS:   
+      method(){
+            console.log('method');
+      }
+THE WINDOW Object: 
+      the window object represents the browser.
 
 
 
