@@ -1,0 +1,52 @@
+body{
+  background-color: blueviolet;
+  font-family: 'Poppins', sans-serif;
+  color:white;
+}
+header{
+  text-align: center;
+  line-height: 10px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+p{
+  margin-bottom: 2px;
+}
+.heading{
+  color: white;
+  font-weight: 400;
+  font-size: 32px;
+
+ }
+ .encouraging-text{
+  font-size:larger;
+  font-style: italic;
+ }
+ form{
+  vertical-align: center;
+  background-color: rgb(13, 3, 22);
+  margin: auto 300px;
+  padding-top: 20px;
+  padding-bottom:60px;
+ }
+ label{
+ display: flex;
+
+ }
+.form-group{
+  margin: 0 45px;
+}
+input[type="text"], [type="number"],[type=email]{
+  width:900px;
+  height:30px;
+  border-radius: 2px;
+  border:none;
+}
+.favourite-dropdown{
+  width:900px;
+  height:30px;
+}
+.current-job{
+  width:813px;
+  height: 30px;
+}
