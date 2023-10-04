@@ -45,9 +45,6 @@ input[type="text"], [type="number"],[type=email]{
   border-radius: 2px;
   border:none;
 }
-option{
- margin-left: 200px;
-}
 .favourite-dropdown{
   width:900px;
   height:30px;
