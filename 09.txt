@@ -25,10 +25,28 @@ DOCUMENT OBJECT MODEL:
       </script>
      </body>
     </html>
-    10. since html element in javascript is an object and the object is a variable so we can assign the html element in a variable.
+10. since html element in javascript is an object and the object is a variable so we can assign the html element in a variable.
     EXAMPLE: 
       const buttonElement = document.querySelector('.js-button1');
       the variable buttonElement will now contain the html for the 
       .js-button.
+11. innerHTML vs innerText 
+  the innerHTML gets us the text inside a button with the spaces but the innerText gets us the text inside a button without any spaces.
+12. click and keydown are called as events .
+13. onclick and on keydown are called as event-listeners.
+14.list of a few event listeners are:
+    onclick     = click
+    onkeydown   =keypress
+    onscroll    =scrolling
+    onmouseenter =hovering over
+    onmouseleave =stop hovering over
+
+15. TYPE COERCION or automatic type conversion.
+     console.log('25'-5); // the string 25 will automatically be converted to a number and hence an example of type coercion or automatic type conversion.
+     console.log above will return 20
+
+16. but the addition of the same string happens differently:
+    console.log('25' + 5);
+    console.log here will return 255 as the typer conversion goes to string this time.
 
    

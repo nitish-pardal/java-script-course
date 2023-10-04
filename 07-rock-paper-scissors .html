@@ -6,21 +6,16 @@
   <body>
     <p>Rock Paper Scissors</p>
     <button onclick="
-       computerMove=pickComputerMove();
-      
+       playGame('rock');
       ">Rock</button><!-- user selection 1-->
     
-   
-
+  
     <button onclick="
-      computerMove=pickComputerMove();
-      playGame('paper');
-
+      playGame('paper'); 
     " >paper</button><!-- user selection 2-->
     
 
     <button onclick="
-       computerMove= pickComputerMove();
       playGame('scissors')
     ">Scissors</button> <!-- user selection 3-->
     
@@ -32,6 +27,8 @@
       let result='';//saving the result of the comparison between user's choice and computer's choice.
       
       function playGame(playerMove){
+        
+        const computerMove=pickComputerMove(); // calling the function to get a random guess for the computer move.
 
         if(playerMove === 'scissors'){
           if(computerMove === 'rock'){
@@ -41,8 +38,8 @@
           else if(computerMove === 'scissors'){
            result='Tie';
           }
-          alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
         }
+
         else if(playerMove ==='paper')
         {
           if(computerMove === 'rock'){
@@ -51,10 +48,9 @@
            {result='Tie';}
           else if(computerMove === 'scissors')
            {result='you loose';}
-
-      alert(`You picked paper. computer picked ${computerMove}.${result}`);
         }
-        else if(playermove === 'rock')
+
+        else if(playerMove === 'rock')
         {
           if(computerMove === 'rock'){
             result='Tie';
@@ -64,14 +60,15 @@
           else if(computerMove === 'scissors'){
             result='you win';
           }
-
-      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
         }
+
+           alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`); // this statement is same for all the code so it is written at the end.
+        
       }
 
       function pickComputerMove()
       {
-        let computerMove=''; // for generation the random number(generates a random number between 0 and 1)
+        const computerMove=''; // for generation the random number(generates a random number between 0 and 1)
 
         if(randomNumber >=0 && randomNumber < 1/3)// compairing the random number to let the computer choose between the rock paper and scissors.
         {

@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
     <title>document object model</title>
   </head>
   <body>
     <button>hello</button>
+    <button class="js-button">second-button</button>
     <script> 
     /*
       document.body.innerHTML='hello';
-      document.title ='DOM!'*/
-      document.title='changed';
+      document.title ='DOM!'
+      document.title='DOM';
       console.log(document.title);
 
       console.log(document.body);
 
       console.log( document.body.innerHTML);
-      document.body.innerHTML = 'changed';
+      document.body.innerHTML = '<button> Good job!</button>';
+*/
+      console.log(document.querySelector('button').innerHTML);// selecting a particular html element 
+      document.querySelector('button') // controling the html element inside java script using innerHTML property.
+        .innerHTML = 'changed';
+        
+      console.log(document.querySelector('button').innerHTML);
+      const buttonElement = document.querySelector('.js-button'); // saving the html element in a variable .
+      console.log(buttonElement);
+
+      
      
     </script>
   </body>

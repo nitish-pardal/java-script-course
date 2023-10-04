@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head language="en">
+    <meta charset="UTF-8">
+    <title>forms-html</title>
+    <link rel="stylesheet" href="form-style.css">
+  </head>
+  <body>
+    <h1>registration form</h1>
+    <p>please fill out the registration form with the required details</p>
+   <form action="mailto:nitishpardal@gmail.com" method="post">
+    <fieldset>
+      <label for="first-name">Enter your first name: <input id="first-name" type="text" required></label>
+      <label for="last-name">Enter your last name: <input id= "last-name" type="text" required></label>
+      <label for="email">Enter your email: <input id= "email" type="email" required></label>
+      <label for="new-password">Create a password <input type="password" pattern="^(?=.*[A-Z])[A-Za-z0-5]{8,}" required></label>
+    </fieldset>
+    <fieldset>
+      <label for="personal-account"><input type="radio" name="account-type">Personal account</label>
+      <label for="business-account"><input type="radio" name="account-type">
+        Business account</label>
+      <label for="terms-and-conditions"> <input type="checkbox"> I accept the terms and conditions</label>
+    </fieldset>
+    <fieldset>
+      <label for="profile-picture"> Upload a profile picture : <input type="file" name="profile-picture"></label>
+      <label for="age">input your age(years) : <input type="number" max="120" min="13"> </label>
+      <label>How did you hear about us? 
+        <select >
+          <option>select any one of the follwing</option>
+          <option>internet</option>
+          <option>by surfing</option>
+          <option>by your employer</option>
+          <option>by self</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit"
+    
+    >
+   </form>
+    
+  </body>
+</html>

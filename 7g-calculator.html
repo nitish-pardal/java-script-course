@@ -20,30 +20,30 @@
       
     <p>
       <button onclick="
-        console.log(updateCalculation('4'));"
+        updateCalculation('4');"
       >4</button>
       <button onclick="
-        console.log(updateCalculation('5'));"
+        updateCalculation('5');"
       >5</button>
       <button onclick="
-        console.log(updateCalculation('6'));"
+        updateCalculation('6');"
       >6</button>
     </p>
 
     <p>
       <button onclick="
-        console.log(updateCalculation('7'));"
+        updateCalculation('7');"
       >7</button>
       <button onclick="
-        console.log(updateCalculation('8'));;"
+        updateCalculation('8');"
       >8</button>
       <button onclick="
-       console.log(updateCalculation('9'));"
+       updateCalculation('9');"
       >9</button>
     </p>
 
     <button onclick="
-      console.log(updateCalculation('+'));"
+      updateCalculation('+');"
     >+</button>
     <button onclick="
       console.log(eval(calculation));"
@@ -55,7 +55,8 @@
     <script>
       let calculation='';
       function updateCalculation(number){ 
-        console.log( calculation += number);
+         calculation += number;
+         console.log(calculation);
       }
     </script>
   </body>

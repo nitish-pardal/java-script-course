@@ -4,4 +4,8 @@ Number         exercise
 3               Strings
 4               basic html and css rewind
 5               Variables 
-6               exercises on the ternary operators and guard and default operator.
+6               exercises on the ternary operators and guard and default operators as  well as boolean and if-statements.
+7               functions and its various features.
+8               objects and JSON with object properties and methods
+9               DOM and DOM manipulation.
+10

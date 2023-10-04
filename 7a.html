@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 7a</title>
+  </head>
+  <body>
+     
+     
+     
+    <script>
+      function greet(name)
+      {
+        if(!name)
+        {
+          name='Hi there!';
+        }
+       console.log(`Hello ${name}`);
+      }
+
+
+      function convertToFahrenheit(celsius) // convert to fahrenheit
+      {
+        let fahren = 0;
+        fahren = (celsius*9/5)+32;
+        return fahren;
+      }
+
+
+      function convertToCelsius(fahrenheit)
+      {
+        let celsius=0;
+        celsius=(fahrenheit-32)* 5/9;
+        return celsius;
+      }
+
+      function convertTemperature (degrees,unit){
+        if(unit === 'c')
+          return `${convertToFahrenheit(degrees)}F`;
+        else 
+          return `${convertToCelsius(degrees)}C`;
+      }
+
+      console.log(convertToFahrenheit(25));
+      console.log(convertToCelsius(86));
+      console.log(convertTemperature(25,'c'));
+      console.log(convertTemperature(86,'f'));
+
+
+      greet('Nitish');
+      greet('Simon');
+      greet('Radhika')
+      greet();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Booleans</title>
+       <style>
+        </style>
+        
+        <script>
+          true 
+          false
+
+         console.log(3 > 5);  
+          console.log(typeof 'true');// do not put quotes around the booleans.
+          console.log(typeof true);
+
+          if (false){
+            console.log('hello');
+           }
+           else{
+            console.log('second statement');
+           }
+
+           const age=15;
+           if(age >= 16){
+            console.log('you can drive');
+           }else if(age >= 14){
+            console.log('Almost there!');
+           }else{
+            console.log('you cannot drive');
+           }
+
+           console.log(true && false);
+           console.log(0.2 >= 0.0 && 0.2< 1/3 );// math is calculated the first
+
+           console.log(true || false); // checks if atleast one side is true  and if both are true then also the result wll be true
+
+           console.log(!true); // 
+          
+         /*
+         booleans are same as any other language as true and false
+
+         COMPARISON OPERATORS: they have lower priority that math.
+         > greater than
+         < less than
+         >= greater than equal to 
+         <= less than equal to 
+         === equal to 
+         == will try to convert both the sides to the same type, so it gives true output for 5 == '5.00';
+         !== not equal to
+         != has the same problems as the ==. 
+         */
+
+         /*
+           LOGICAL OPERATORS:they have the least priority lower than the COMPARISON OPERATOR
+           &&: when both the left and righ sides are true then the value is true else false.
+           ||: when either one of the side is true then the outpuit will be true .
+           !: the not operator.
+         */
+           if(5) // a falsy value
+           console.log('true');
+
+          if(0) 
+          console.log('true');
+
+          let  cartQuantity=0;
+
+          if (cartQuantity){
+            console.log('cart has products');
+          }
+          else
+          console.log('Cart has no products');
+
+
+          /*
+           list of some falsy values: 0 , NaN , undefined , null;
+           if(cartQuanitiy > 0) is same as if(cartQuantity) 
+           nan occurs when we do a math error.
+           undefined occurs when there is no value defined for something .
+           */
+
+        </script>
+    </body>
+</html>

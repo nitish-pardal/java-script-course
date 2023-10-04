@@ -30,13 +30,74 @@
 
       const product2= {
         name: 'shirt',
-        ['delivery-time']: '1 day' //bracket decleration
+        'delivery-time': '1 day', //bracket decleration
+        //['delivery-time']: 1day // This is also valid, but when we have only one strign in the brackets then we can ignore the brackets.
+        rating:{         //nested objects.
+          stars: 4.5 ,
+          count: 87
+        } ,
+        fun: function funtion1(){  //function inseide an object
+            console.log('function inside object')
+        }
+
        };
       console.log(product2);
       console.log(product2.name);// dot notation
       console.log(product2['name']);// bracket notation.
       console.log(product2['delivery-time']); // normal dot notation sees the '-' in the delivery-time as a minus thus we will not be able to acces this with the dot notation.
+      console.log(product2.rating.count);
+      console.log(product2['rating']['stars']);
 
+      product2.fun(); // this is a method in java script.
+
+       console.log(JSON.stringify(product2));
+
+       const jsonSTring= JSON.stringify(product2);
+       console.log(JSON.parse(jsonSTring));
+
+       
+       console.log('hello'.length);
+       console.log('hello'.toUpperCase());
+
+       const object1={ // object1 only gets refrence or the address of where the inside variable is stored.
+        message:'hello' // this is created somewhere in computers memory. 
+       };
+       const object2 = object1; // copy by refrences.
+      
+       object1.message='good job';  // we were able to change the value inspite of object 1 is decalred as const, because the object one just contains only the refrence. 
+       console.log(object1);  
+       const object3={
+        message: 'good job' 
+       };
+
+       console.log(object3 === object1) // we cannot compare two objects .
+       console.log(object2 === object1) // they have the same refrence 
+
+       object4 = {
+        message:'good job',
+        price: 977
+       };
+      // const price = object4.price); OR YOU CAN DO :
+
+      const{price,message}=object4;// this is called destructuring.
+      console.log(price, message);
+
+      object5={
+        //message:message this is also know as shrothand peroperty.
+        message  ,// this works same as the above as the value of message and the property message are having the same name .
+       // method: function function1(){
+        //  console.log('method');
+       // }
+        method(){     // works same as the above function
+          console.log('method');
+        }
+      };
+      console.log(object5);
+
+
+
+
+       
 
 
       /*object : groups mulitple values togethor.
@@ -47,6 +108,7 @@
        
         ** by default we always use the dot notation but in some conditions where it is necessary we need to use the bracket notation.
 
+        console.log is also a method .
       */
     </script>
   </body>

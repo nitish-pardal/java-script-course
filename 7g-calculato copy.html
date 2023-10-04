@@ -46,22 +46,23 @@
       updateCalculation('+');"
     >+</button>
     <button onclick="
-      console.log(eval);"
-    >=</button>
+      console.log(eval(calculation));
+    ">=</button>
+
     <button onclick="
       console.log('clear');
      localStorage.removeItem('calculation');
+     calculation='';
 
     ">clear</button>
     <script>
       let calculation=JSON.parse(localStorage.getItem('calculation')) || 
        '';
 
-
       function updateCalculation(number){ 
          calculation += number;
          localStorage.setItem('calculation',JSON.stringify(calculation));
-          console.log(calculation);
+         console.log(calculation);
       }
     </script>
   </body>

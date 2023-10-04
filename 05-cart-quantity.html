@@ -11,45 +11,64 @@
           <div>Cart Quantity</div>
 
           <button onclick="
-            console.log(`Cart quantity : ${cartQuantity} `);
-            ">ShowQuantity</button>
-
+           console.log(`Cart quantity : ${cartQuantity} `);
+              ">ShowQuantity
+          </button>
+            
           <button onclick="
-            console.log(`Cart quantity : ${cartQuantity += 1}`);
+            if(cartQuantity+1 > 10) 
+             {alert('The cart if full');}
+            else{console.log(`Cart quantity : ${cartQuantity += 1}`);}
+            
           ">Add to Cart</button>
 
           <button onclick="
-            console.log(`Cart quantity : ${cartQuantity += 2}`);
+          if(cartQuantity+2 > 10) 
+             {alert('The cart if full');}
+             else
+              console.log(`Cart quantity : ${cartQuantity += 2}`);
           ">+2</button>
 
           <button onclick="
-          console.log(`Cart quantity : ${cartQuantity += 3}`);
-          "
-          >+3</button>
+            if(cartQuantity+3 > 10) 
+               {alert('The cart if full');}
+            else
+              {console.log(`Cart quantity : ${cartQuantity += 3}`);}
+          ">+3</button>
+          
           <button onclick="
-            console.log(`cart quantity: ${cartQuantity +=4}`);  
+            if(cartQuantity+4 > 10) 
+             {alert('The cart if full');}
+            else {console.log(`cart quantity: ${cartQuantity +=4}`);  }
             ">
           +4</button>
 
           <button onclick=" 
-          console.log( `cart quantity: ${cartQuantity += 5}`);
+           if(cartQuantity+5 > 10) 
+             {alert('The cart if full');}
+           else {console.log( `cart quantity: ${cartQuantity += 5}`);}
             ">
           +5</button>
 
+          <!--remove from cart buttons-->
+
           <button onclick="
-            console.log(`Cart quantity : ${cartQuantity += 2}`);
-          ">+2</button>
-          <button onclick="
-            console.log(`cart quantity: ${cartQuantity--}`);">
-          remove from cart</button>
+            if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else{ console.log(`cart quantity: ${--cartQuantity}`);}
+           ">remove from cart</button>
 
 
           <button onclick="
-           console.log(`Cart quantity : ${cartQuantity -= 2}`);
+           if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else{console.log(`Cart quantity : ${cartQuantity -= 2}`);}
           ">-2</button>
 
-          <button onclick="
-           console.log(`Cart quantity : ${cartQuantity -= 3}`);
+          <button onclick=" 
+            if(cartQuantity <= 0)
+              {alert('Not enough items in the cart');}
+           else {console.log(`Cart quantity : ${cartQuantity -= 3}`);}
           ">-3</button>
 
 
@@ -68,6 +87,7 @@
           // snake case: cart_quantity -- not used much in java script
        
             let cartQuantity = 0;
+          
           </script>
     </body>
 </html>

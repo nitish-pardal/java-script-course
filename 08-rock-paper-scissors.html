@@ -23,7 +23,7 @@
       score.wins = 0;
       score.losses = 0;
       score.ties = 0;
-      localStorage.removeItem('score');
+      localStorage.removeItem('score'); // resetting the score in the localStorage
      
     ">
       Reset Score
@@ -31,7 +31,20 @@
 
     <script>
       
-      const score=JSON.parse(localStorage.getItem('score'));
+      let score=JSON.parse(localStorage.getItem('score')) ||
+       {
+        wins:0,
+        losses:0,
+        ties:0
+      };  // setting the default values to zero for a case when there is no value in the localStorage.
+
+      /* if (!score){  this is same as writing if (score === 'null')
+        score ={
+          wins:0,
+          losses:0,
+          ties:0
+        };
+       }*/
 
       console.log(JSON.parse(localStorage.getItem('score'))); // getting the values from the local storage.
       

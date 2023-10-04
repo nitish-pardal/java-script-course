@@ -3,6 +3,9 @@ body{
   font-family: 'Poppins', sans-serif;
   color:white;
 }
+input{
+  margin-top:7px;
+}
 header{
   text-align: center;
   line-height: 10px;
@@ -24,7 +27,7 @@ p{
  }
  form{
   vertical-align: center;
-  background-color: rgb(13, 3, 22);
+  background-color: rgba(13, 3, 22,0.5);
   margin: auto 300px;
   padding-top: 20px;
   padding-bottom:60px;
@@ -42,6 +45,9 @@ input[type="text"], [type="number"],[type=email]{
   border-radius: 2px;
   border:none;
 }
+option{
+ margin-left: 200px;
+}
 .favourite-dropdown{
   width:900px;
   height:30px;
@@ -49,4 +55,18 @@ input[type="text"], [type="number"],[type=email]{
 .current-job{
   width:813px;
   height: 30px;
+  margin-top: 7px;
+ 
+}
+.submit-button{
+  width:809px;
+  height:35px;
+  margin-top: 40px;
+  background-color: green;
+  color: white;
+  font-size: large;
+  border: none;
+}
+input::placeholder{
+  padding-left: 15px;
 }

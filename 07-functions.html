@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>functions</title>
+  </head>
+  <body>
+    <script>
+      function function1(){ // declairing a function.
+        console.log('hello');
+        console.log(2+2);
+        return 5; //a return statement
+
+      }
+        function1(); //calling the function
+        function1(); //calling the function another time.
+
+        function calculateTax(){
+          console.log(1000 *0.1); //calculating the tax without any parameter
+        }
+
+        function calculateTax1(cost, taxPercent){ // calculating the tax with a parameter. This is a call by value function.
+          console.log(cost*(taxPercent))
+        }
+        calculateTax1(2000,0.2);// calling a function with a parameter
+        calculateTax1(5000,0.3); // function reusability
+        calculateTax();
+
+        function calculateWithDefaultparameter(cost,taxPercent=0.1)
+        {
+          console.log(cost*taxPercent);
+        }
+        calculateWithDefaultparameter(5000); //calculation is done with the default parameter
+        calculateWithDefaultparameter(2000,0.2); //call with a parameter does not affect the result as the parameter got over written.
+
+
+      /* funtions : they let us reuse the code any number of times.
+         return statement: when there is no value is the return statement then it goes as undefined.
+         the function will run and will return an undefined.
+         a return statement will end the function then and there only.
+         parameters: same rules as variable names ,
+         cannot start witha number and alwaus use the camercase
+     */
+    </script>
+  </body>
+</html>

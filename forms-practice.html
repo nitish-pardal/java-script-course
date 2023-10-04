@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html language="en">
+  <head>
+    <title>forms-practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="forms-style-practice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <header>
+        <p class="heading">freeCodeCamp Survey Form</p>  
+        <p class="encouraging-text">Thank you for taking time to help us improve the platform</p>
+      </header>
+      <form >
+        <div class="form-group">
+          <p>Name</p>
+          <label for="name">
+            <input type="text" name="name" id="name" placeholder="enter your name">
+          </label>
+          
+        </div>
+       <div class="form-group">
+        <p>Email</p>
+        <label for="Email"><input type="email" id="email" name="email" placeholder="Enter your email"></label> 
+       </div>
+       <div class="form-group">
+        <p>Age</p>
+        <label for="Age"><input type="number" name="age" id="age" placeholder="Age" max="100" min="10"></label>
+       </div>
+       <div class="form-group">
+        <p>Which option descibes your current role?</p>
+        <select id="drop-down" name="drop-down" class="current-job">
+          <option value="student"> student</option>
+          <option value="working-professional"> Working professional</option>
+          <option value="Teacher"> Teacher</option>
+          <option value="Freelancer"> Freelancer</option>
+          <option value="Other"> other</option>
+        </select></label>
+       </div>
+      <div class="form-group">
+        <p>would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="radio"> Definitely</label> 
+        <label><input type="radio" name="radio"> Maybe</label>
+        <label><input type="radio" name="radio"> Not sure</label>
+      </div>
+      <div class="form-group">
+        <p>What is you favourite feature of freeCodeCamp?</p>
+        <label for="favourite-freecodecamp">
+        <select name="favourite-freecodecamp" id="favourite-freecodecamp" class="favourite-dropdown">
+          <option value="">select an option</option>
+          <option value="challenges">challenges</option>
+          <option value="projects">projects</option>
+          <option value="community">community</option>
+          <option value="open source">open source</option>
+        </select></label>
+      </div>
+      <div class="form-group">
+        <p>What would you like to see improved? (check all that apply)</p>
+        <label><input type="checkbox" value="front end projects">Front-end projects</label>
+        <label><input type="checkbox" value="back end projects">Back-end projects</label>
+        <label><input type="checkbox" value="data visualization">Data visualization</label>
+        <label><input type="checkbox" value="challenges">challenges</label>
+        <label><input type="checkbox" value="open source community">open source community</label>
+        <label><input type="checkbox" value="gitter help rooms">gitter help rooms</label>
+        <label><input type="checkbox" value="videos">videos </label>
+        <label><input type="checkbox" value="city meetups">city meetups</label>
+        <label><input type="checkbox" value="wiki">wiki</label>
+        <label><input type="checkbox" value="forum">forum</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea name="text-area" id="text-area" cols="107" rows="7" placeholder="Enter your comment here...."></textarea>
+        </div>
+        <div class="form-group"><input type="submit" class="submit-button"></div>
+        
+      </form>
+    </div>
+  </body>
+</html>

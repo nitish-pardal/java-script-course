@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ternary operator</title>
+  </head>
+  <body>
+    <script>
+      const result = true ? 'truthy':'falsy'
+
+      true && console.log('hello'); // guard element
+      
+      const message= 5 && 'hello'; // and got short-circuited
+        console.log(message);
+
+      let currency= undefined || 'USD'; // output to this will be USD as we are not giving and other currency but
+        console.log(currency);  // this is how the or operator is used to set a default.
+      currency= 'EUR' || 'USD'; // output to this will be EUR as the first one is true.
+        console.log(currency);  
+
+      /* three short-cuts are there:
+        ternary opertator:  ?:
+        guard operator: &&
+        default operator: ||
+    */
+    </script>
+    
+  </body>
+</html>

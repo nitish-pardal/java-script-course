@@ -1,0 +1,17 @@
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #1b1b32;
+  color: white;
+}
+
+fieldset{
+  width:900px;
+}
+label{
+  display: flex;
+  margin: 0.5rem 0;
+}
+input{
+  margin-left: 5px;
+}
