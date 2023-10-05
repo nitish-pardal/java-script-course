@@ -1,14 +1,22 @@
-DOCUMENT OBJECT MODEL:
+DOCUMENT OBJECT MODEL: (just the document object)
   1. this is another built in object called as document object.
+
   2. Document object represents the web page / models the webpage,
     when we change the property of the document object then we also change the webpage
-  3.DOM combines javascript and html togethor. 
+
+  3.DOM combines javascript and html togethor. we can have html elements in the javascript, DOM gives the control of the  website to javascript
+
   4. we can use document.body to access the body emelent inside the javascript.
+
   5.when inside javascript the body element becomes an aboject of javascript
+
   6.innerHTML is a property of body as now body has become an object so we can use properties on it .
+
   7.The innerHTML property controls the html inside the body.
+
   8.methods of the document object:
     document.querySelector();:  this helps in selecting a particular element of html and put it inside the javascript.
+
   9.Every html element has a property called as innerHTML which lets us control the html inside the element.
   
   DOCUMENT.querySelector():
@@ -25,28 +33,42 @@ DOCUMENT OBJECT MODEL:
       </script>
      </body>
     </html>
+
 10. since html element in javascript is an object and the object is a variable so we can assign the html element in a variable.
     EXAMPLE: 
       const buttonElement = document.querySelector('.js-button1');
       the variable buttonElement will now contain the html for the 
       .js-button.
+
 11. innerHTML vs innerText 
-  the innerHTML gets us the text inside a button with the spaces but the innerText gets us the text inside a button without any spaces.
+
+  innerHTML control of  all the HTML which are under the body tag.
+  the innerHTML gets us the text inside a button with the spaces but the innerText gets us the text inside an element without any spaces.
+
 12. click and keydown are called as events .
+
 13. onclick and on keydown are called as event-listeners.
+
 14.list of a few event listeners are:
     onclick     = click
     onkeydown   =keypress
     onscroll    =scrolling
     onmouseenter =hovering over
     onmouseleave =stop hovering over
+15. GETTING A VALUE FROM THE INPUT: use the .value property to get the value of the input element as:
+  
 
-15. TYPE COERCION or automatic type conversion.
+16. TYPE COERCION or automatic type conversion.
      console.log('25'-5); // the string 25 will automatically be converted to a number and hence an example of type coercion or automatic type conversion.
      console.log above will return 20
 
-16. but the addition of the same string happens differently:
+17. but the addition of the same string happens differently:
     console.log('25' + 5);
     console.log here will return 255 as the typer conversion goes to string this time.
 
+18.Window : is a built in object that represents the webpage this is same as writing console.log() but isntead it is written as windows.console.log()
+    Every thing inside an webpage comes under the window object hence the console ,Document,alert and everything on a browser comes under the windows object.
+    But we never write window.document or windows.alert as the java script completes it for us.
+
+19. always do math using number and not string .
    
