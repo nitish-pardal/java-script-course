@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 9 d,e,f</title>
+  </head>
+  <body>
+    <input class="name-input" type="text" onkeydown="handleKeyPress(event.key);">
+
+    <button class="submit-button" onclick="displayName();">Submit</button>
+    <p class="js-name-display"></p>
+    <script>
+      function displayName(){
+       const nameElement = document.querySelector('.name-input').value;
+       console.log(nameElement);
+       document.querySelector('.js-name-display').innerHTML = `your name is: ${nameElement}`;
+      }
+      function handleKeyPress(event){
+        if (event === 'Enter'){
+          displayName();
+        }
+        
+      }
+    </script>
+  </body>
+</html>

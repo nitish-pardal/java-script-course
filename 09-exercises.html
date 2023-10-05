@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 9a</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="button2">9b</button> 
+
+    <button class="heads-button" onclick="headButtonCall();">heads</button>
+    <button class="tails-button" onclick="tailsButtonCall();">tails</button>
+    <p class="js-display-para"></p>
+    <script>
+
+     function headButtonCall(){
+      document.querySelector('.js-display-para').innerHTML = `you choose: heads`;
+     }
+     function tailsButtonCall(){
+      document.querySelector('.js-display-para').innerHTML = `you choose: tails`;
+     }
+
+      console.log(document.querySelector('button'));
+      document.querySelector('.button2').innerHTML = "9b done!";
+      console.log(document.querySelector('.button2')); 
+    </script>
+  </body>
+</html>

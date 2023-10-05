@@ -11,15 +11,26 @@
 <!-- amazon shippitng calculator-->
 
     <p>Amazon Shipping Calculator</p>
-    <p>Orders under $40 =+$10 shipping.</p>
-    <p>Orders over $40 = FREE shipping.</p>
-    <input  class="js-cost-input" type="text" placeholder="Cost of order"
-    onkeydown="handleCostKeydown(event);"
-    >
-    <button onclick="calculateTotal();">calculate</button>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping</p>
+    <input type="text" placeholder="cost of order" class="js-cost-input" onkeydown="handleKeyPress(event.key)">
+    <button class="" onclick="calculateTotal();">Calculate</button>
     <p class="js-total-cost"></p>
-    
     <script>
+
+      function calculateTotal(){
+       const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value);
+        if (cost < 40)
+          cost = cost + 10;
+
+      document.querySelector('.js-total-cost').innerHTML=`$${cost}`
+      }
+      function handleKeyPress(event)
+      { console.log(typeof event);
+        if(event === 'Enter')
+        calculateTotal();
+      }
       String(25)
       console.log('25'-5);
       console.log('25' + 5);
@@ -32,20 +43,8 @@
         else
           buttonElement.innerText='subscribe';
       }
-
-      function calculateTotal(){
-        const inputElement = (document.querySelector('.js-cost-input'));
-        let cost= Number(inputElement.value);
-          if(cost < 40 ){
-            cost += 10;
-          }
-          document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
-      }
-      function handleCostKeydown(event){
-        if(event.key ==='Enter'){
-          calculateTotal();
-        }
-      }
+      
+     
     </script>
   </body>
 

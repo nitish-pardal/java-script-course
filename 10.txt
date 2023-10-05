@@ -1,0 +1,12 @@
+1.we can set more than one class inside a html element just by seperatin it with space:
+    EXAMPLE: <button class="js-button-element css-button-element"></button>
+
+2.classlist is an object which gives us the control of the class attribute 
+
+3.You can use methods with the classlist :
+  1. add(): this is used to add a class to the html element used as: classlist.add('class-name');
+  2. remove(): this is used to remove a class from the html element , used as: classlist.remove('class-name');
+
+4. for the code to be readable we write the javascript in seperate files and to link these files we use the 'src="" ' inside the script to access the javascript
+ 
+5. we can use multiple script tag to add more than one java script file in one single html file.

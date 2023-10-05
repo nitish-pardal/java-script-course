@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Cart-quantity</title>
+       <style>
+        div{
+          margin-bottom: 20px;
+        }
+        </style>
+        <body>
+          <div>Cart Quantity</div>
+
+          <button onclick="
+           console.log(`Cart quantity : ${cartQuantity} `);
+              ">ShowQuantity
+          </button>
+            
+          <button onclick="
+              updateCartQuantity(1);
+          ">Add to Cart</button>
+
+          <button onclick="
+            updateCartQuantity(2);
+          ">+2</button>
+
+          <button onclick="
+            updateCartQuantity(3);
+          ">+3</button>
+          
+          <button onclick="
+            updateCartQuantity(4);
+            ">
+          +4</button>
+
+          <button onclick=" 
+           updateCartQuantity(5);
+            ">
+          +5</button>
+
+          <!--remove from cart buttons-->
+
+          <button onclick="
+            updateCartQuantity(-1);
+           ">remove from cart</button>
+
+
+          <button onclick="
+          updateCartQuantity(-2);
+          ">-2</button>
+
+          <button onclick=" 
+           updateCartQuantity(-3);
+          ">-3</button>
+
+
+          <button onclick="
+            cartQuantity = 0;
+            displayCart(cartQuantity);
+            alert(`Cart was reset.`);
+          "
+          >Reset Cart</button>
+          <p class="js-cart-display"></p>
+          
+          <script>
+           
+            let cartQuantity = 0;
+            displayCart(cartQuantity);
+            function updateCartQuantity(Quantity)
+            {
+              if(cartQuantity+Quantity > 10){
+                alert('The Cart is full');
+                return;
+              }
+                
+             if(cartQuantity + Quantity < 0){
+              alert('Not enough items in the cart');
+              return;
+             }
+              
+              else
+                {
+                  cartQuantity+=Quantity;
+                  displayCart(cartQuantity);
+                }
+            }
+            function displayCart(cartQuantity){
+              document.querySelector('.js-cart-display').innerHTML =`cart quantity: ${cartQuantity}`;
+            }
+          // Types of naming conventions
+          // camel Case: cartQuantity
+          // pascal case: CartQuantity
+          // kebab case: cart-quantity -- this does not work in   java-script
+          // snake case: cart_quantity -- not used much in java script
+       
+            
+          </script>
+    </body>
+</html>

@@ -30,9 +30,9 @@ objects and JSON
             to access the above written property we write the dot notation as:
                   console.log(object1.rating.stars.); or we can use
                   console.log(object1['ratign']['starts']);
-      5. objects point to a refrence of where the actual property is store in the system.
+      5. objects point to a refrence of where the actual property is store in the Computer memory.
       6. we cannot compare two objects with each other directly,
-            if you want to compare the values of two objects then do that manually by compariring the properties of the objects.
+            if you want to compare the values of two objects then do so manually by compariring the properties of the objects.
       7. when you compare two objects which may have the same value inside them it will return false and ,
       8. if 2 objects are pointing to the same refrence then they will return a true when you compare them.
 
@@ -59,7 +59,7 @@ BUILT-IN JSON object :
 
 LOCAL STORAGE: (localStorage):This is also a predefined object
       note:  a local storage only supports strings .
-      1. a local storage is a place where we store data more permanently
+      1. a local storage is a place where we store data more permanently for the website.
       2. the stored data is accessible at all the pages,
       3. when we store data in variables then they get deleted when we refresh/close the page.
       4. to add a value to a local storage we need to use localStorage.setItem() function.

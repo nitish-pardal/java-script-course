@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      challenges 9g,h
+    </title>
+  </head>
+  <body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping</p>
+    <input type="text" placeholder="cost of order" class="js-cost-input" onkeydown="handleKeyPress(event.key)">
+    <button class="" onclick="calculateTotal();">Calculate</button>
+    <p class="js-total-cost"></p>
+
+    <input type="text" class="js-text-input" onkeyup="textHandler();">
+    <p class="js-text-output"></p>
+    <script>
+      function textHandler(){
+        const keypresses = document.querySelector('.js-text-input').value;
+        document.querySelector('.js-text-output').innerHTML=keypresses; 
+      }
+
+      function calculateTotal(){
+       const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value * 100);
+        if (cost < 40*100)
+          cost = (cost + 10*100) / 100;
+        else
+         cost = cost / 100 ;
+
+      document.querySelector('.js-total-cost').innerHTML=`$${cost}`
+      }
+      function handleKeyPress(event)
+      { console.log(typeof event);
+        if(event === 'Enter')
+        calculateTotal();
+      }
+
+
+    </script>
+  </body>
+</html>

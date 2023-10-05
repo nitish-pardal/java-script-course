@@ -28,7 +28,7 @@
       score.losses = 0;
       score.ties = 0;
       localStorage.removeItem('score'); // resetting the score in the localStorage
-      updateScoreElement(); // resettign and updating the score.
+      updateScoreElement(); // to display the resetted score on the screen .
      
     ">
       Reset Score
@@ -105,7 +105,7 @@
 
            localStorage.setItem('score',JSON.stringify(score)); // saving to a local storage
 
-          updateScoreElement();
+          updateScoreElement(); //to update the score everytime when you play the game 
 
           document.querySelector('.js-result')
            .innerHTML=result;
@@ -115,7 +115,7 @@
 
       }
 
-      function updateScoreElement(){
+      function updateScoreElement(){ // function to update the score on the screen.
         document.querySelector('.js-score')
        .innerHTML= `wins:${score.wins}, losses :${score.losses}, ties:${score.ties}`;
       }
