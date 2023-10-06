@@ -1,3 +1,4 @@
 Arrays and loops:
 Arrays : an array is another type of value that we use in javascript 
 Array represents a list fo other values 
+indexing of the array is same as all the other languages : it starts from zero upto n-1.
