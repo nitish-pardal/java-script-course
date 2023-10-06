@@ -2,3 +2,31 @@ Arrays and loops:
 Arrays : an array is another type of value that we use in javascript 
 Array represents a list fo other values 
 indexing of the array is same as all the other languages : it starts from zero upto n-1.
+
+Changing a value of the array.
+  array[index]= value of choice.(provided that the array is defined).
+
+syntax rule for arrays:
+  start with a [ and end with a ].
+  seperate each value with a comma.
+  you can access or change the value by using the index.
+
+Arrays support any kind of valye string , number, boolean, objects or arrays  or a combination of all .
+Arrays are actually objects but some special type of objects .
+to check if something is actually an array you can actually use a fucntion;
+Array.isArray(name of the array or array);
+
+you can get the length of the array by using the .length fucntion.
+
+some methods of the array:
+1. push(); :this adds a number in the array towards the end of the array
+2. splice();: this removes the number from the array , it accepts 2 value one is : index and the other one is the number of the values to remove.
+
+LOOPS:
+the loops help us run the code over and over .
+ther are two types of loop:
+while and for
+
+ACCUMULATOR PATTERN:
+1. create a variable to store the result.
+2. loop through the array and update the result.
