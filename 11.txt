@@ -1,0 +1,3 @@
+Arrays and loops:
+Arrays : an array is another type of value that we use in javascript 
+Array represents a list fo other values 
