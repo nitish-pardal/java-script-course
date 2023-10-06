@@ -1,0 +1,31 @@
+body{
+  background-color: black;
+}
+.total-display{
+  font-size: 35px;
+  margin: 0 10px;
+  color: white;
+}
+.grey-button{
+  background-color:rgb(51,51,51) ; color:white;
+  border:none;
+  height:65px;
+  width:65px;
+  margin:0 5px;
+  border-radius: 40px;
+  font-size: 28px;
+  
+}
+.clear-button{
+  font-size: 20px;
+}
+.orange-button{
+  background-color: orange;
+  color:white;
+  border:none;
+  height:65px;
+  width:65px;
+  margin:0 5px;
+  border-radius: 40px;
+  font-size: 28px;
+}
