@@ -30,3 +30,7 @@ while and for
 ACCUMULATOR PATTERN:
 1. create a variable to store the result.
 2. loop through the array and update the result.
+
+
+7336201100000164
+BKID0007336
