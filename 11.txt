@@ -31,6 +31,25 @@ ACCUMULATOR PATTERN:
 1. create a variable to store the result.
 2. loop through the array and update the result.
 
+Arrays are just refrences same as the objects and they work the same.
 
-7336201100000164
-BKID0007336
+you cannot copy the arrays as ususal, to copy the array you have to use the fucntion : .slice();
+
+DESTRUCTURING:
+
+you can also access the value of the array as:
+const [first ,second ,third] = [1,2,3];
+
+  this will give the result as:
+    first:1;
+    second:2;
+    third:3;
+
+BREAK AND CONTINUE STATEMENTS IN THE LOOPS:
+
+break : lets us exit a loop early.
+continue:  lets us skip one iteration of the loop or one run of the loop.
+
+RETURN STATEMENT:
+  same as break when used inside an loop .
+  
