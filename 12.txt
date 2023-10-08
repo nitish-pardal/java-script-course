@@ -1,0 +1,29 @@
+Advance features of the function:
+functions are also variable.
+we can save a function in a variable.
+
+Anonymous function:
+  This is a function without a name and defined as:
+    const function1 = function()
+    {
+      console.log('hello2');
+    } ;
+
+HOISTING: 
+when we write a function normally , then we do not need to worry about where we need to call the function , we can call it before even defining it , this is HOISTING.  
+
+HOISTING does not work in case of anonymous function.
+
+you can also define a funtion within an object by using a proerty called as 'fun: function functionName()', This is called as method
+you can call the above function by calling the property as: obj1.fun();
+
+you can also pass a function into a function.
+
+CALL-BACK FUNCTION():
+when you pass a function in side a function the function that is passed is called as a callback function.
+
+SETTIMEOUT():
+  this function helps us to run a function in the future.
+
+  function takes up 2 values .
+  one: 
