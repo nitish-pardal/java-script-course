@@ -31,11 +31,15 @@
     runTwice(add);
 
     function changeValue(){
-     
+  
+      document.querySelector('.js-start-button').innerHTML = 'loading ...'
       setTimeout(function(){
         document.querySelector('.js-start-button').innerHTML = 'Finished!';
       },1000);
+
     }
+
+    
   </script>
 </body>
 </html>
