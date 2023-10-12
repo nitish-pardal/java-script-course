@@ -1,6 +1,8 @@
 Advance features of the function:
-functions are also variable.
+functions are also values .
+Any thing that you can do with a value you can do it with a function.
 we can save a function in a variable.
+In JavaScript as long as there is a way to access the function we do not need to give function a name, this is known as an Anonymous function.
 
 Anonymous function:
   This is a function without a name and defined as:
@@ -22,8 +24,44 @@ you can also pass a function into a function.
 CALL-BACK FUNCTION():
 when you pass a function in side a function the function that is passed is called as a callback function.
 
+Example: 
+
+function run(parameter){ 
+  parameter(); //calling the parameter as function because the value that is passed in the parameter is a function.
+}
+run (function(){
+  console.log('function within a function'); // the callback function.
+});
+
 SETTIMEOUT():
   this function helps us to run a function in the future.
 
   function takes up 2 values .
-  one: 
+  one: the name of the function that we want to run in the future.
+  two: how long to wait before running this function.
+
+Asynchronous code:
+Asynchronous code means that the code wont wait for the code line to get executed and it just moves on to the next line of the code , 
+EXAMPLE:
+
+f1= function(){
+  console.log('time out function text'); 
+}
+ setTimeout(f1, 6000); // the code will not wait for this line to get exected instead set the timer for 6second and move on to print the next line of the code.
+
+console.log('next line');
+
+Synchronous code:
+This means the code will wait for one line to finish before going to the next line of the code.
+.all the code that we have written in this course in Synchronous code.
+
+SetInterval():Takes up 2 parameters:
+one: name of the function / function that we need to run in future.
+two: how long to wait before running the function.
+
+This runs the conde in the inverval of every seconds that you have passed in the second parameter.
+EXAMPLE:
+setInterval(function f2(){ // runs this function with the interval of one second.
+  console.log('Interval');
+}, 1000);
+

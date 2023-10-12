@@ -1,0 +1,17 @@
+Dear [Company Name] Hiring Team,
+
+I'm writing to express my keen interest in your Frontend Developer position. With [X years] of experience in web development and a growing proficiency in generative AI, I'm excited about the opportunity to contribute to [Company Name].
+
+My expertise in HTML, CSS, JavaScript, and user-focused design has equipped me to create engaging web experiences. I'm also actively expanding my skills in generative AI to bring innovation to digital projects.
+
+What sets [Company Name] apart is its commitment to technology and innovation. I'm eager to contribute to this vision and am ready to learn any company-specific skills required for the role.
+
+Attached is my resume for your consideration. I'd love to discuss how I can contribute to [Company Name] further.
+
+Thank you for your time.
+
+Best regards,
+
+[Your Name]
+[Your Phone Number]
+[Your Email Address]

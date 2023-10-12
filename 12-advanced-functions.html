@@ -13,7 +13,7 @@
 
       const num =2;
       const function1= function(){
-        console.log('hello2');
+        console.log('hello2');4- 
       };
       console.log(function1);
       console.log(typeof function1);
@@ -36,15 +36,45 @@
           param();
         }
         run(function(){
-          console.log('helllo4')
++          console.log('helllo4')
         });
-*/
+
+
+object2={
+  num : 2 ,
+  name: 'nitish',
+function1: function(parameter)
+{
+  console.log(parameter);
+}
+};
         setTimeout(function()
         {
           console.log('timeout'),3000
         });
 
+console.log(object2);
+object2.function1(100);
 
+function run(parameter){
+  parameter();
+}
+run (function(){
+  console.log('function within a function');
+});
+*/
+f1= function(){
+  console.log('time out function text');
+}
+ setTimeout(f1, 6000);
+
+console.log('next line');
+
+setInterval(function f2(){
+  console.log('Interval');
+}, 4000); // this is also an asynchronouse function.
+
+console.log('next line 2');
     </script>
   </body>
 </html> 
