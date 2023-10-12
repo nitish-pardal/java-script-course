@@ -20,6 +20,26 @@ console.log(JSON.parse(localStorage.getItem('score'))); // getting the values fr
 
 //saving the result of the comparison between user's choice and computer's choice.
 
+let isAutoPlaying = false ;
+let intervalId;
+
+  function autoPlay(){
+    if(isAutoPlaying === false){
+   intervalId = setInterval(function (){
+      const playerMove =pickComputerMove();
+      playGame(playerMove);
+    } , 1000);
+    isAutoPlaying = true;
+    }
+else{
+  clearInterval(intervalId); // clearing the intervalId / stopping the interval.
+  isAutoPlaying = false; // to restart the autoplaying when we click the button again.
+}
+}
+
+
+
+
 function playGame(playerMove){
  const computerMove=pickComputerMove();/* calling )the function to get a random guess for the computer move.*/
 

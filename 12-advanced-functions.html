@@ -62,7 +62,7 @@ function run(parameter){
 run (function(){
   console.log('function within a function');
 });
-*/
+
 f1= function(){
   console.log('time out function text');
 }
@@ -75,6 +75,25 @@ setInterval(function f2(){
 }, 4000); // this is also an asynchronouse function.
 
 console.log('next line 2');
+*/
+
+array1=[
+  'make dinner',
+  'wash dishes',
+  'watch youtube'
+];
+array1.forEach(function(value , index){
+  console.log(value);
+  console.log(index);
+});
+
+array1.forEach(function(index ,value){
+  console.log(value);
+  console.log(index);
+});
+
+
+
     </script>
   </body>
 </html> 

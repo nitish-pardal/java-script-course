@@ -65,3 +65,41 @@ setInterval(function f2(){ // runs this function with the interval of one second
   console.log('Interval');
 }, 1000);
 
+the setInterval function always returns a value , you can call it as interval id and when you want to stop the interval use clearInterval(intervalId);
+to stop the function.
+
+with every interval a new Id is produced.
+
+forEach():
+  This allows us to loop through the array same as for and while loops.
+  wokrs with the function as a parameter as:
+  array1=[
+  'make dinner',
+  'wash dishes',
+  'watch youtube'
+];
+array1.forEach(function(value , index){
+  console.log(value);
+  console.log(index);
+});
+explanation: loop through the array and insert the value of the array in the first parameter and the index in the second parameter.
+
+The foreach() function does not have a break statement and if you require to use the break any where in you code then you should use the for loop instead of the forEach();
+
+you can get the functionaliy of the continue by using the return statement.
+
+EXAMPLE:
+array1=[
+  'make dinner',
+  'wash dishes',
+  'watch youtube'
+];
+array1.forEach(function(value , index){
+  if(value === 'wash dishes')
+    return;
+  
+  console.log(value);
+  console.log(index);
+});
+
+
