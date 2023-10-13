@@ -68,7 +68,10 @@ setInterval(function f2(){ // runs this function with the interval of one second
 the setInterval function always returns a value , you can call it as interval id and when you want to stop the interval use clearInterval(intervalId);
 to stop the function.
 
-with every interval a new Id is produced.
+with every interval a new Id is produced. you can save the id in a variable.
+
+clearInterval(intervalId): This is a function that is used to stop the inteval , the parameter is the intervalId that comes from the setInterval().
+
 
 forEach():
   This allows us to loop through the array same as for and while loops.
@@ -102,4 +105,34 @@ array1.forEach(function(value , index){
   console.log(index);
 });
 
+ARROW FUNCTONS():
+This is just a shorter way of writing functions
+This has the same functionality as the normal functions, but the only difference is that it has some features over the normal function.
 
+normal arrow function:
+
+const arrowfunction =()=>{
+  console.log('this is a normal arrow function');
+}
+
+one parameter arrow function:
+does not require any brackets around the parameter.
+const oneparamete =param =>{
+  return param;
+}
+
+oneline arrow function:
+does not require any return statement of any curly braces
+const oneLine =()=> 2+3 ;
+
+Arrow functions vs normal functions:
+arrow functions do not provide use with the hoisting feature like the normal function.
+
+.addEventListner('event name (click,keydown etc.)',function for what to do when the even is met.): better way of using java script on a html element.
+
+advantages of the .addEventListner():
+this helps us add multiple event listeners to one event .
+
+removeEventListner(): This helps in remving the event listener takes upt two parameters:
+one:is the string for the event.
+two:is the exactfunction that we want to remove.

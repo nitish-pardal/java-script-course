@@ -12,7 +12,13 @@
   <button class= "js-start-button" onclick="changeValue();">
     Start
   </button>
+  <button class="addtocart-button" onclick="addtoCart();">
+    Add to Cart
+  </button>
+  <p class="js-display-para"></p>
   <script>
+
+    
     let add = function(){
       console.log(2+3);
     }
@@ -32,14 +38,23 @@
 
     function changeValue(){
   
-      document.querySelector('.js-start-button').innerHTML = 'loading ...'
+      document.querySelector('.js-start-button').innerHTML = 'loading ...';
       setTimeout(function(){
         document.querySelector('.js-start-button').innerHTML = 'Finished!';
       },1000);
 
     }
+  let timeoutId;
+   function addtoCart(){
+    document.querySelector('.js-display-para').innerHTML = "Added";
+    clearTimeout(timeoutId);
 
+    timeoutId = setTimeout(function(){
+      document.querySelector('.js-display-para').innerHTML = "";
+    },2000);
     
+    }
+
   </script>
 </body>
 </html>

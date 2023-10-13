@@ -6,11 +6,39 @@
   <title>Document</title>
 </head>
 <body>
+  <button class="js-add-button" onclick="
+    message ++;
+    displayTitle();
+  " >Add</button>
+  <button class="js-remove-button" onclick=" if(message > 0)
+    message-- ;
+  else stopNotification();
+">Remove</button>
+
  <script>
   let message =2;
-  
+  let intervalId ;
+  let isdisplaying = false;
+displayTitle();
 
+function displayTitle(){
+
+  if(!isdisplaying){
+   intervalId = setInterval(function(){
+    if(document.title === 'app')
+      document.title = `(${message}) New Message`;
+    else
+      document.title = 'app';
+  },1000);
+  isdisplaying = true;
   }
+}
+  function stopNotification(){
+    clearInterval(intervalId);
+    document.title = 'app';
+    isdisplaying =false;
+  }
+  
  </script>
 </body>
 </html>

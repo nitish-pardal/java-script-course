@@ -25,20 +25,45 @@ let intervalId;
 
   function autoPlay(){
     if(isAutoPlaying === false){
-   intervalId = setInterval(function (){
+   intervalId = setInterval(()=> {
       const playerMove =pickComputerMove();
       playGame(playerMove);
     } , 1000);
     isAutoPlaying = true;
+    document.querySelector('.Auto-play-button').innerText='Stop autoPlay';
     }
 else{
   clearInterval(intervalId); // clearing the intervalId / stopping the interval.
   isAutoPlaying = false; // to restart the autoplaying when we click the button again.
+  document.querySelector('.Auto-play-button').innerText='auto Play';
+
 }
 }
 
+document.querySelector('.js-rock-button').addEventListener('click', ()=>{
+  playGame('rock');
+});
+document.querySelector('.js-paper-button').addEventListener('click',() =>{
+playGame('paper');
+});
 
+document.querySelector('.js-scissors-button').addEventListener('click',() =>{
+  playGame('scissors');
+});
+document.querySelector('.js-auto-play-button').addEventListener('click',() =>{
+autoPlay();
+});
 
+document.body.addEventListener('keydown',(event) =>{
+  if(event.key === 'r')
+    playGame('rock');
+  else if(event.key === 'p')
+    playGame('paper');
+  else if(event.key === 's')
+    playGame('scissors');
+  else
+    alert('wrong key press');
+});
 
 function playGame(playerMove){
  const computerMove=pickComputerMove();/* calling )the function to get a random guess for the computer move.*/
