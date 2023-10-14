@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 12 exercises</title>
+</head>
+<body>
+  <script>
+   const multiply=(a,b) => a*b;
+   console.log(multiply(2,3));
+   console.log(multiply(7,10));
+
+   function countPositive(array){
+    let count=0;
+    array.forEach((value,index) => {
+      if(value >=0)
+      count ++;
+    });
+    return count;
+   }
+  const array=[1,-3,5];
+   console.log(countPositive(array));
+  console.log(countPositive([-2,3,-5,7,10]));
+
+
+  function addNum(array,num){
+  return array.map(value => value + num );
+  }
+
+  console.log(addNum([1,2,3],2));
+  console.log(addNum([-2,-1,0,99],2));
+
+  function removeEgg(foods){
+   
+    return foods.filter((value,index) =>{
+     if(value === 'egg' && index < 2)
+      return false;
+    else
+      return true;
+    });
+  }
+
+
+  console.log(removeEgg(['egg','egg','apple','egg','ham','egg','egg']));
+  console.log();
+  </script>
+</body>
+</html>

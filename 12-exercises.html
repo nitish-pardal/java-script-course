@@ -39,7 +39,7 @@
     function changeValue(){
   
       document.querySelector('.js-start-button').innerHTML = 'loading ...';
-      setTimeout(function(){
+      setTimeout(() => {
         document.querySelector('.js-start-button').innerHTML = 'Finished!';
       },1000);
 
@@ -49,11 +49,13 @@
     document.querySelector('.js-display-para').innerHTML = "Added";
     clearTimeout(timeoutId);
 
-    timeoutId = setTimeout(function(){
+    timeoutId = setTimeout(() => {
       document.querySelector('.js-display-para').innerHTML = "";
     },2000);
     
     }
+    
+
 
   </script>
 </body>
